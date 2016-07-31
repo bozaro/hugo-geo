@@ -22,6 +22,9 @@
     {{ range .Params.css }}
     <link rel="stylesheet" href="{{ . }}">
     {{ end }}
+    {{ range .Site.Params.css }}
+    <link rel="stylesheet" href="{{ . }}">
+    {{ end }}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{ if or (isset .Params "highlight") (isset .Site.Params "highlight") }}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
