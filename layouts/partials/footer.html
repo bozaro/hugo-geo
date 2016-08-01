@@ -53,7 +53,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
   {{ end }}
   {{ if or (isset .Params "highlight") (isset .Site.Params "highlight") }}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script src="{{ .Site.BaseURL }}/js/highlight.js/highlight.min.js"></script>
   {{ end }}
   <script src="{{ .Site.BaseURL }}/js/App.js"></script>
   {{ range .Params.scripts }}
