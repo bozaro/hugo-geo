@@ -29,9 +29,6 @@
     <link rel="stylesheet" href="{{ . }}">
     {{ end }}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {{ if or (isset .Params "highlight") (isset .Site.Params "highlight") }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/js/highlight.js/styles/default.min.css">
-    {{ end }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
     {{ if .Site.RSSLink }}
     <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />

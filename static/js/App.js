@@ -23,16 +23,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	// Wrap pygments tables in table-responsive classes
-	// Credit to GitHub user dazinator
-	// https://github.com/alexurquhart/hugo-geo/issues/17
-	$( ".highlighttable" ).wrap("<div class='table-responsive'></div>");
-	
-	// Highlight all on load if highlighting
-	if (typeof hljs !== "undefined") {
-		hljs.initHighlightingOnLoad();
-	}
-	
 	// If d3 is not loaded do not show the globe
 	if (typeof d3 === "undefined") {
 		return;
