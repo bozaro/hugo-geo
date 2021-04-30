@@ -1494,12 +1494,6 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
-code,
-kbd,
-pre,
-samp {
-  font-family: 'Inconsolata', monospace;
-}
 code {
   padding: 2px 4px;
   font-size: 90%;
@@ -1536,7 +1530,7 @@ pre {
 }
 pre code {
   padding: 0;
-  font-size: inherit;
+  font-size: 0.8em;
   color: inherit;
   white-space: pre-wrap;
   background-color: transparent;
